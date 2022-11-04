@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: company
+  datasource:
+    password: suman-10
+    url: jdbc:mysql://company-10.mysql.database.azure.com:3306/company?useSSL=true&requireSSL=false
+    username: company@company-10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
